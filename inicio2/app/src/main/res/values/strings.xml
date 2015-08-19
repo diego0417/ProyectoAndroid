@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Memory View</string>
+
+    <!-- estos son los textos del menu  -->
+    <string name="inicio">Inicio</string>
+    <string name="grabaVideo">Grabar Video</string>
+    <string name="contactos">Mis Contactos</string>
+    <string name="videos">Mis Videos</string>
+    <string name="cerrarSesion">Cerrar Sesion</string>
+    <!-- titulos de las paginas  -->
+
+    <string name="t_inicio">Inicio</string>
+    <string name="t_grabaVideo">Grabar</string>
+    <string name="t_contactos">Contactos</string>
+    <string name="t_videos">Videos</string>
+    <string name="t_cerrarSesion">Cerrar Sesion</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Nombres de los items -->
+    <string-array name="nav_drawer_items">
+        <item >Perfil</item>
+        <item >inicio2</item>
+        <item >inicio3</item>
+        <item >inicio4</item>
+    </string-array>
+
+    <!-- Iconos de los items -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/prueba2</item>
+        <item>@drawable/user</item>
+        <item>@drawable/camarita</item>
+        <item>@drawable/user</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+
+
+    <string name="action_settings">Settings</string>
+</resources>

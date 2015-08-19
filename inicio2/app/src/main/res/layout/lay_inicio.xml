@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/inicio_perfil">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/inicio_foto_perfil"
+            android:src="@drawable/prueba2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Diego Vilette"
+            android:textColor="@color/negro"
+            android:id="@+id/inicio_perfil_nombre"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="72dp"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2 min"
+            android:id="@+id/inicio_perfil_fecha"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="310dp"
+            android:layout_marginRight="16dp"
+            android:textSize="13dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:id="@+id/inicio_imagenVideo"
+        android:src="@drawable/prueba2"
+        android:layout_below="@+id/inicio_perfil"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/inicio_imagenVideo"
+        android:id="@+id/inicio_descripcion">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Titulo de la Foto"
+            android:id="@+id/inicio_descripcion_titulo"
+            android:textColor="@color/negro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="una descripcion breve de la foto,no mas de 100 caracteres"
+            android:id="@+id/inicio_descripcion_descripcion"
+            android:layout_below="@+id/inicio_descripcion_titulo"
+            android:textSize="14dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
