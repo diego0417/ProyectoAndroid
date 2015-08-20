@@ -1,31 +1,21 @@
 package com.example.diego.inicio2;
 
 import android.app.Activity;
-
-import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.TypedArray;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.example.diego.inicio2.vistas.Contactos;
-import com.example.diego.inicio2.vistas.GrabarVideo;
 import com.example.diego.inicio2.vistas.Inicio;
 import com.example.diego.inicio2.vistas.NavDrawerItem;
 import com.example.diego.inicio2.vistas.NavDrawerListAdapter;
@@ -73,14 +63,18 @@ public class MainActivity extends Activity {
         navDrawerItems = new ArrayList<NavDrawerItem>();
 
         // agregar un nuevo item al menu deslizante
-        // Favoritos
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1)));
-        // Pedidos
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1)));
-        // Catologo
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
-        // Contacto
-        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
+        // Perfil
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[0], navMenuIcons.getResourceId(0, -1),"diegov.0417@gmail.com"));
+        // Inicio
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[1], navMenuIcons.getResourceId(1, -1), true, "+99"));
+        // Grabar
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1)));
+        // Contactos
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1), true, "2"));
+        //ver Videos
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
+        // cerrar sesion
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[5], navMenuIcons.getResourceId(5, -1)));
 
         // Recycle the typed array
         navMenuIcons.recycle();

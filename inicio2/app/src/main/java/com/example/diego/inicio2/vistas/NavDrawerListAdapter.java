@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.*;
+
 import com.example.diego.inicio2.R;
 
 import java.util.ArrayList;
@@ -55,16 +55,11 @@ public class NavDrawerListAdapter extends BaseAdapter {
 			TextView txtCount2 = (TextView) convertView.findViewById(R.id.mail);
 
 			imgIcon2.setImageResource(navDrawerItems.get(position).getIcon());
-			txtTitle2.setText(navDrawerItems.get(position).getTitle());
-
+			txtTitle2.setText("Diego Vilette");
+			txtCount2.setText("diegov.0417@gmail.com");
 			// displaying count
 			// check whether it set visible or not
-			if(navDrawerItems.get(position).getCounterVisibility()){
-				txtCount2.setText(navDrawerItems.get(position).getCount());
-			}else{
-				// hide the counter view
-				txtCount2.setVisibility(View.GONE);
-			}
+
 		}else{
 			if (convertView == null) {
 				LayoutInflater mInflater = (LayoutInflater)

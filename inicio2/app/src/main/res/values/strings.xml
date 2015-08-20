@@ -20,18 +20,22 @@
 
     <!-- Nombres de los items -->
     <string-array name="nav_drawer_items">
-        <item >Perfil</item>
-        <item >inicio2</item>
-        <item >inicio3</item>
-        <item >inicio4</item>
+        <item >Diego Vilette</item>
+        <item >Inicio</item>
+        <item >Grabar</item>
+        <item >Contactos</item>
+        <item >Videos</item>
+        <item >Cerrar Sesion</item>
     </string-array>
 
     <!-- Iconos de los items -->
     <array name="nav_drawer_icons">
         <item>@drawable/prueba2</item>
-        <item>@drawable/user</item>
+        <item>@drawable/home</item>
         <item>@drawable/camarita</item>
         <item>@drawable/user</item>
+        <item>@drawable/ver2</item>
+        <item>@drawable/salir</item>
     </array>
 
     <!-- Content Description -->
